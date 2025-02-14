@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Surprise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            background-color: #ffe6e6;
+        }
+        .container {
+            position: relative;
+            width: 320px;
+        }
+        .envelope {
+            width: 100%;
+            height: 180px;
+            background: pink;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+        }
+        .letter {
+            width: 85%;
+            background: white;
+            padding: 20px;
+            position: absolute;
+            bottom: -100px; /* Lowered letter to make message visible */
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            z-index: 1;
+        }
+        .message {
+            font-size: 18px;
+            font-weight: bold;
+            color: #d63384;
+            margin-bottom: 15px; /* Added space below message */
+        }
+        .collage {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            margin-top: 30px;
+        }
+        .collage img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="envelope"></div>
+        <div class="letter">
+            <p class="message">Happy Valentine's Day, mahal ko!</p>
+            <div class="collage">
+                <img src="photo1.jpg" alt="Photo 1">
+                <img src="photo2.jpg" alt="Photo 2">
+                <img src="photo3.jpg" alt="Photo 3">
+                <img src="photo4.jpg" alt="Photo 4">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
